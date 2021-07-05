@@ -1,0 +1,1 @@
+#Rename your .env.test file with .env and then replace all the variables with your API config.

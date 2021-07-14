@@ -209,6 +209,17 @@ importlib-metadata = {version = ">=0.12", markers = "python_version < \"3.8\""}
 dev = ["pre-commit", "tox"]
 
 [[package]]
+name = "pmaw"
+version = "1.1.0"
+description = "A multithread Pushshift.io API Wrapper for reddit.com comment and submission searches."
+category = "main"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+requests = "*"
+
+[[package]]
 name = "praw"
 version = "7.3.0"
 description = "PRAW, an acronym for `Python Reddit API Wrapper`, is a python package that allows for simple access to reddit's API."
@@ -244,6 +255,18 @@ ci = ["coveralls"]
 dev = ["black", "flake8", "pre-commit", "pydocstyle", "flynt", "betamax (>=0.8,<0.9)", "betamax-matchers (>=0.4.0,<0.5)", "betamax-serializers (>=0.2.0,<0.3)", "mock (>=0.8)", "pytest", "testfixtures (>4.13.2,<7)"]
 lint = ["black", "flake8", "pre-commit", "pydocstyle", "flynt"]
 test = ["betamax (>=0.8,<0.9)", "betamax-matchers (>=0.4.0,<0.5)", "betamax-serializers (>=0.2.0,<0.3)", "mock (>=0.8)", "pytest", "testfixtures (>4.13.2,<7)"]
+
+[[package]]
+name = "psaw"
+version = "0.1.0"
+description = "Pushshift.io API Wrapper for reddit.com public comment/submission search"
+category = "dev"
+optional = false
+python-versions = ">=3"
+
+[package.dependencies]
+Click = "*"
+requests = "*"
 
 [[package]]
 name = "py"
@@ -448,7 +471,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7.11"
-content-hash = "cd6f776aa9d78a013661eed057ebfbaf04da64df73e960d3cd3519c6a51be084"
+content-hash = "8d7a95ba04308045ce691b96c1881d0a206de3ecded8a6134603d6aa081f9fd7"
 
 [metadata.files]
 appdirs = [
@@ -570,6 +593,10 @@ pluggy = [
     {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
     {file = "pluggy-0.13.1.tar.gz", hash = "sha256:15b2acde666561e1298d71b523007ed7364de07029219b604cf808bfa1c765b0"},
 ]
+pmaw = [
+    {file = "pmaw-1.1.0-py3-none-any.whl", hash = "sha256:5acb8e4659fdb2878461bdfb88833479aa72b4aa4ca421679bcbfb7a080824ef"},
+    {file = "pmaw-1.1.0.tar.gz", hash = "sha256:38716aa55aa15b8df0ca3a5d427db13098831a97e1e1d3fe41c44bbb4c983163"},
+]
 praw = [
     {file = "praw-7.3.0-py3-none-any.whl", hash = "sha256:98d435856b34851aaf88575b65b4864f1f7f848913b47e046243bb126682a66f"},
     {file = "praw-7.3.0.tar.gz", hash = "sha256:9773fb5a2f5ab910d6f8e14da84e81d8d3d868261745371341d8b2043588ba7c"},
@@ -577,6 +604,9 @@ praw = [
 prawcore = [
     {file = "prawcore-2.2.0-py3-none-any.whl", hash = "sha256:cb7a01e43202233d62c4f9c0da890f6e6a534cebc16fb6ef1e71aff7077b0f42"},
     {file = "prawcore-2.2.0.tar.gz", hash = "sha256:bde42fad459c4dcfe0f22a18921ef4981ee7cd286ea1de3eb697ba91838c9123"},
+]
+psaw = [
+    {file = "psaw-0.1.0-py3-none-any.whl", hash = "sha256:0d62ad9964dfbe9943b2089b25d3e44a7604794491a24a009c4262b2397fed6b"},
 ]
 py = [
     {file = "py-1.10.0-py2.py3-none-any.whl", hash = "sha256:3b80836aa6d1feeaa108e046da6423ab8f6ceda6468545ae8d02d9d58d18818a"},

@@ -8,12 +8,14 @@ authors = ["Endi Caushi <mrendi29@gmail.com>"]
 python = "^3.7.11"
 praw = "^7.3.0"
 pandas = "^1.3.0"
+pmaw = "^1.1.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
 flake8 = "^3.9.2"
 black = "^21.6b0"
 python-dotenv = "^0.18.0"
+psaw = "^0.1.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

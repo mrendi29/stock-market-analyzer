@@ -10,12 +10,12 @@ with pd.read_csv(
     for chunk in reader:
         chunk['body'] = chunk['body'].str.replace(r"\,|\n",r'',regex=True)
         with open("comments.csv", "a", newline="") as f:
-                chunk.to_csv(
-                    f,
-                    mode="a",
-                    sep=",",
-                    header=f.tell() == 0,
-                    index=False,
-                    quoting=csv.QUOTE_MINIMAL,
-                    quotechar="|",
-            )
+            chunk.to_csv(
+                f,
+                mode="a",
+                sep=",",
+                header=f.tell() == 0,
+                index=False,
+                quoting=csv.QUOTE_MINIMAL,
+                quotechar="|",
+        )
